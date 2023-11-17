@@ -113,7 +113,7 @@ export default function Home() {
             <p className="bt text-kumera-900 lg:text-right">
               Chez Gerard Bakery, nous sommes convaincus que chaque geste compte
               pour préserver notre planète. C &apos est pourquoi nous avons mis
-              en place une série de solutions durables pour réduire notre
+              en place une série de solutions durables pour réduire notre s
               empreinte écologique.
             </p>
           </div>
