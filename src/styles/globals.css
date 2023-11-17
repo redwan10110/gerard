@@ -1,27 +1,684 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-noka: "Noka Font", sans-serif;
+  --font-ivy: "Ivy Font", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .container {
+    @apply mx-auto;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+
+  .font-noka {
+    font-family: var(--font-noka), system-ui, sans-serif;
+  }
+
+  .font-ivy {
+    font-family: var(--font-ivy), system-ui, sans-serif;
+  }
+
+  .exeptionalHeader {
+    font-family: var(--font-noka);
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: -0.8px;
+  }
+
+  .h1 {
+    font-family: var(--font-ivy);
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  .t1 {
+    font-family: var(--font-noka);
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    vertical-align: text-bottom;
+  }
+
+  .alternativeSmall {
+    text-transform: none;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: normal;
+    vertical-align: middle;
+  }
+
+  .alternativeCaps {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    vertical-align: middle;
+  }
+
+  .alternativeCenter {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: normal;
+    vertical-align: middle;
+  }
+
+  .t2 {
+    font-family: var(--font-noka);
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+
+  .hl1 {
+    font-family: var(--font-ivy);
+    font-size: 27px;
+    line-height: 31px;
+  }
+
+  .hl2 {
+    font-family: var(--font-noka);
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+  .hl4 {
+    font-family: var(--font-noka);
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hl4ivy {
+    font-family: var(--font-ivy);
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .bt {
+    font-family: var(--font-noka);
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+  }
+
+  .bts {
+    font-family: var(--font-noka);
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .tc3 {
+    font-family: var(--font-ivy);
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .exeptionalH2 {
+    font-family: var(--font-noka);
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: -0.8px;
+  }
+
+  .footerHeader {
+    font-family: var(--font-ivy);
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .footerSubtitle {
+    font-family: var(--font-noka);
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .footerMask {
+    clip-path: polygon(
+      161.218% 22.366%,
+      161.218% 22.366%,
+      161.188% 21.953%,
+      161.099% 21.55%,
+      160.953% 21.161%,
+      160.753% 20.788%,
+      160.502% 20.435%,
+      160.202% 20.105%,
+      159.854% 19.801%,
+      159.463% 19.527%,
+      159.029% 19.286%,
+      158.556% 19.081%,
+      158.556% 19.081%,
+      148.462% 15.495%,
+      138.148% 12.271%,
+      127.634% 9.414%,
+      116.941% 6.928%,
+      106.089% 4.817%,
+      95.098% 3.083%,
+      83.99% 1.73%,
+      72.784% 0.763%,
+      61.5% 0.185%,
+      50.16% 0%,
+      50.16% 0%,
+      38.82% 0.185%,
+      27.537% 0.763%,
+      16.331% 1.73%,
+      5.223% 3.083%,
+      -5.768% 4.817%,
+      -16.62% 6.928%,
+      -27.313% 9.414%,
+      -37.827% 12.271%,
+      -48.142% 15.495%,
+      -58.236% 19.081%,
+      -58.236% 19.081%,
+      -58.709% 19.286%,
+      -59.142% 19.527%,
+      -59.534% 19.801%,
+      -59.881% 20.105%,
+      -60.181% 20.435%,
+      -60.433% 20.788%,
+      -60.632% 21.161%,
+      -60.778% 21.55%,
+      -60.867% 21.953%,
+      -60.897% 22.366%,
+      -60.897% 96.293%,
+      -60.897% 96.293%,
+      -60.834% 96.894%,
+      -60.648% 97.465%,
+      -60.352% 97.997%,
+      -59.955% 98.482%,
+      -59.467% 98.914%,
+      -58.898% 99.285%,
+      -58.258% 99.586%,
+      -57.558% 99.811%,
+      -56.806% 99.951%,
+      -56.014% 100%,
+      156.335% 100%,
+      156.335% 100%,
+      157.127% 99.951%,
+      157.878% 99.811%,
+      158.579% 99.586%,
+      159.219% 99.285%,
+      159.788% 98.914%,
+      160.276% 98.482%,
+      160.673% 97.997%,
+      160.969% 97.465%,
+      161.154% 96.894%,
+      161.218% 96.293%,
+      161.218% 22.366%
+    );
+  }
+
+  .headerMask {
+    clip-path: polygon(
+      100% 8.5%,
+      100% 8.5%,
+      95.23% 6.89%,
+      90.41% 5.45%,
+      85.54% 4.17%,
+      80.64% 3.07%,
+      75.7% 2.13%,
+      70.73% 1.36%,
+      65.74% 0.76%,
+      60.72% 0.33%,
+      55.68% 0.08%,
+      50.63% 0%,
+      50.63% 0%,
+      45.58% 0.08%,
+      40.55% 0.33%,
+      35.53% 0.76%,
+      30.53% 1.36%,
+      25.56% 2.13%,
+      20.63% 3.07%,
+      15.72% 4.17%,
+      10.86% 5.45%,
+      6.04% 6.89%,
+      0% 8.75%,
+      0% 100%,
+      100% 100%,
+      100% 8.5%
+    );
+    /* clip-path: polygon( 100% 8.496%,100% 8.496%,95.226% 6.889%,90.405% 5.447%,85.542% 4.172%,80.639% 3.065%,75.702% 2.126%,70.734% 1.357%,65.739% 0.759%,60.721% 0.333%,55.684% 0.079%,50.633% 0%,50.633% 0%,45.582% 0.079%,40.545% 0.333%,35.527% 0.759%,30.532% 1.357%,25.564% 2.126%,20.627% 3.065%,15.724% 4.172%,10.86% 5.447%,6.04% 6.889%,1.266% 8.496%,1.266% 100%,100% 100%,100% 8.496% ); */
+  }
+
+  .headerBottomText {
+    font-family: var(--font-noka);
+    font-size: 13px;
+    line-height: 16.5px;
+    letter-spacing: 0px;
+  }
+  /* //mini Tablet */
+  @screen md {
+    .h1 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+    .hl1 {
+      font-size: 31px;
+      line-height: 36px;
+    }
+
+    .hl2 {
+      font-family: var(--font-noka);
+      font-size: 23px;
+      line-height: 24px;
+    }
+
+    .exeptionalH2 {
+      font-size: 51px;
+      line-height: 51px;
+      letter-spacing: -1.16px;
+    }
+
+    .footerHeader {
+      font-size: 45px;
+      line-height: 49px;
+    }
+
+    .footerMask {
+      @apply w-[740px] -translate-x-[38px];
+      clip-path: polygon(
+        100% 22.734%,
+        100% 22.734%,
+        99.986% 22.259%,
+        99.944% 21.797%,
+        99.876% 21.353%,
+        99.783% 20.929%,
+        99.666% 20.53%,
+        99.526% 20.16%,
+        99.366% 19.824%,
+        99.185% 19.524%,
+        98.986% 19.267%,
+        98.769% 19.054%,
+        98.769% 19.054%,
+        94.227% 15.472%,
+        89.586% 12.254%,
+        84.856% 9.401%,
+        80.044% 6.918%,
+        75.162% 4.81%,
+        70.217% 3.078%,
+        65.22% 1.728%,
+        60.178% 0.762%,
+        55.102% 0.185%,
+        50% 0%,
+        50% 0%,
+        44.898% 0.185%,
+        39.822% 0.762%,
+        34.78% 1.728%,
+        29.783% 3.078%,
+        24.838% 4.81%,
+        19.956% 6.918%,
+        15.144% 9.401%,
+        10.414% 12.254%,
+        5.773% 15.472%,
+        1.231% 19.054%,
+        1.231% 19.054%,
+        1.014% 19.267%,
+        0.815% 19.524%,
+        0.634% 19.824%,
+        0.474% 20.16%,
+        0.334% 20.53%,
+        0.217% 20.929%,
+        0.124% 21.353%,
+        0.056% 21.797%,
+        0.014% 22.259%,
+        0% 22.734%,
+        0% 95.961%,
+        0% 95.961%,
+        0.027% 96.616%,
+        0.105% 97.238%,
+        0.23% 97.817%,
+        0.397% 98.346%,
+        0.603% 98.817%,
+        0.843% 99.221%,
+        1.113% 99.549%,
+        1.408% 99.794%,
+        1.725% 99.947%,
+        2.059% 100%,
+        97.941% 100%,
+        97.941% 100%,
+        98.275% 99.947%,
+        98.592% 99.794%,
+        98.887% 99.549%,
+        99.157% 99.221%,
+        99.397% 98.817%,
+        99.603% 98.346%,
+        99.77% 97.817%,
+        99.895% 97.238%,
+        99.973% 96.616%,
+        100% 95.961%,
+        100% 22.734%
+      );
+    }
+
+    .headerMask {
+      @apply w-[740px] -translate-x-[38px];
+      clip-path: polygon(
+        100% 21.557%,
+        100% 21.557%,
+        99.99% 21.287%,
+        99.959% 21.022%,
+        99.909% 20.764%,
+        99.84% 20.514%,
+        99.754% 20.276%,
+        99.649% 20.05%,
+        99.528% 19.838%,
+        99.391% 19.643%,
+        99.238% 19.465%,
+        99.071% 19.308%,
+        99.071% 19.308%,
+        94.505% 15.679%,
+        89.838% 12.417%,
+        85.08% 9.527%,
+        80.24% 7.011%,
+        75.327% 4.874%,
+        70.351% 3.12%,
+        65.321% 1.751%,
+        60.246% 0.772%,
+        55.136% 0.188%,
+        50% -0%,
+        50% 0%,
+        44.864% 0.188%,
+        39.754% 0.772%,
+        34.679% 1.751%,
+        29.649% 3.12%,
+        24.673% 4.874%,
+        19.76% 7.011%,
+        14.92% 9.527%,
+        10.162% 12.417%,
+        5.495% 15.679%,
+        0.929% 19.308%,
+        0.929% 19.308%,
+        0.762% 19.465%,
+        0.609% 19.643%,
+        0.472% 19.839%,
+        0.351% 20.05%,
+        0.246% 20.276%,
+        0.16% 20.515%,
+        0.091% 20.764%,
+        0.041% 21.022%,
+        0.01% 21.287%,
+        0% 21.557%,
+        0% 97.297%,
+        0% 97.297%,
+        0.027% 97.735%,
+        0.105% 98.151%,
+        0.23% 98.539%,
+        0.397% 98.893%,
+        0.603% 99.208%,
+        0.842% 99.478%,
+        1.112% 99.698%,
+        1.407% 99.862%,
+        1.724% 99.965%,
+        2.058% 100%,
+        97.942% 100%,
+        97.942% 100%,
+        98.276% 99.965%,
+        98.593% 99.862%,
+        98.888% 99.698%,
+        99.158% 99.478%,
+        99.397% 99.208%,
+        99.603% 98.893%,
+        99.77% 98.539%,
+        99.895% 98.151%,
+        99.973% 97.735%,
+        100% 97.297%,
+        100% 21.557%
+      );
+    }
+
+    .headerDescription {
+      font-family: var(--font-noka);
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0px;
+    }
+  }
+
+  /* //Tablet */
+  @screen lg {
+    .h1 {
+      font-size: 63px;
+      line-height: 66px;
+    }
+    .t1 {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .alternativeCenter {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    .exeptionalH2 {
+      font-size: 67px;
+      line-height: 67px;
+      letter-spacing: -1.51px;
+    }
+
+    .footerHeader {
+      font-size: 60px;
+      line-height: 65px;
+    }
+
+    .footerSubtitle {
+      font-size: 19px;
+      line-height: 29px;
+    }
+
+    .footerMask,
+    .headerMask {
+      @apply w-[985px] -translate-x-[65px];
+    }
+  }
+
+  /* //Laptop -> Base! */
+  @screen xl {
+    .h1 {
+      font-size: 80px;
+      line-height: 83px;
+    }
+    .t2 {
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 24%;
+    }
+    .hl1 {
+      font-size: 42px;
+      line-height: 48px;
+    }
+
+    .hl2 {
+      font-family: var(--font-noka);
+      font-size: 33px;
+      line-height: 34px;
+    }
+
+    .hl4 {
+      font-family: var(--font-noka);
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    .bt {
+      font-size: 15px;
+      line-height: 29px;
+    }
+
+    /* body text small */
+    .bts {
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .tc3 {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .exeptionalHeader {
+      font-size: 88px;
+      line-height: 1em;
+      letter-spacing: -2px;
+    }
+
+    .exeptionalH2 {
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2px;
+    }
+
+    .footerHeader {
+      font-size: 74px;
+      line-height: 80px;
+    }
+
+    .footerSubtitle {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .headerBottomText {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .headerDescription {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .footerMask,
+    .headerMask {
+      @apply w-[1214px] -translate-x-[35px];
+    }
+  }
+
+  /* //Desktop */
+  @screen 2xl {
+    .t2 {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 18%;
+    }
+
+    .h1 {
+      font-size: 96px;
+      line-height: 100px;
+    }
+    .hl1 {
+      font-size: 49px;
+      line-height: 56px;
+    }
+
+    .hl4 {
+      font-size: 26px;
+      line-height: 35px;
+    }
+
+    .bt {
+      font-size: 17px;
+      line-height: 34px;
+    }
+
+    .bts {
+      font-size: 15px;
+      line-height: 27px;
+    }
+
+    .tc3 {
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    .footerHeader {
+      font-size: 89px;
+      line-height: 92px;
+    }
+
+    .footerSubtitle {
+      font-size: 29px;
+      line-height: 43px;
+    }
+
+    .headerBottomText {
+      font-size: 19px;
+      line-height: 26px;
+    }
+
+    .headerDescription {
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    .footerMask,
+    .headerMask {
+      @apply w-[1456px] -translate-x-[61px];
+    }
+  }
+
+  .cardTopImageBackground {
+    background-image: url(../../public/placeholder_small.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .scale-in-center {
+    -webkit-animation: scale-in-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      500ms both;
+    animation: scale-in-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 500ms
+      both;
+  }
+
+  @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* .headerMask {
+    -webkit-mask-image: url(../../public/headerMask.svg);
+    mask-image: url(../../public/headerMask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: top;
+    mask-mode: luminance;
+  } */
+
+  .headerImage {
+    background-image: url(../../public/HeaderImage.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  section > div:nth-child(1) {
+    @apply container px-4 md:px-0;
+  }
 }

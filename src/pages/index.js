@@ -1,118 +1,124 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from "next/image";
+import testImg from "../assets/Header.png";
+import yellowShape from "../assets/yellow.png";
+import grayShape from "../assets/gray.png";
+import mobile from "../assets/mobile.png";
+import bowl from "../assets/Bowl.png";
+import bin from "../assets/bin.png";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      {/* section 1 */}
+      <div className="px-0 md:px-4 overflow-hidden">
+        <div className="relative">
+          {/* header */}
+          <Image
+            src={testImg}
+            width={"100vw"}
+            height={100}
+            layout="responsive"
+            alt="test"
+          ></Image>
+          {/* the patter image */}
+          <div
+            className="absolute 2xl:-right-32 2xl:-bottom-48 lg:-right-32 lg:-bottom-40 md:-right-28 md:-bottom-24 -right-12 -bottom-20 2xl:w-[590px] 2xl:h-[430px] lg:w-[410px] lg:h-[300px]
+          md:w-[310px] md:h-[260px] w-[240px] h-[200px] -z-10"
           >
-            By{' '}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+              src={yellowShape}
+              layout="responsive"
+              alt="yelloshape"
+            ></Image>
+          </div>
+        </div>
+        <p className="border-s border-laurel-800 my-24 w-[277px] md:w-[660px] lg:w-[712px] xl:w-[708px] 2xl:w-[828px] mx-auto pl-5 xl:pl-12 lg:pl-10 md:pl-7 font-medium text-[31px] leading-[52px] tracking-[0.57] text-laurel-800">
+          Notre engagement pour la durabilité se reflète dans toutes les
+          facettes de notre entreprise. Nous croyons que chaque petite action
+          compte et que nous pouvons tous contribuer à un avenir plus durable.
+          C&apos est pourquoi nous avons mis en place une série d&apos
+          initiatives pour réduire notre impact environnemental et favoriser une
+          agriculture plus respectueuse de la nature.{" "}
+        </p>
+      </div>
+      {/* section two */}
+      <div className="bg-rose-600">
+        <p className="text-[14px] leading-[20px] pt-[70px] 2xl:pt-[130px] 2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 mb-5 text-rose-800">
+          NOS VALEURS
+        </p>
+        <h1 className="2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 hl1 mb-5 md:mb-[70px] text-kumera-900">
+          Des actions concrètes <br /> pour un avenir durable
+        </h1>
+        <div className="relative">
+          {/* paragraph box */}
+          <div className="flex flex-col md:flex-row md:gap-24 gap-4 2xl:ml-[480px] xl:ml-[400px] lg:ml-[162px] md:ml-[60px] mx-5 mb-[110px] lg:mb-[120px] xl:mb-[280px] ">
+            <div className="w-full md:w-[375px]">
+              <p className="bt text-kumera-900">
+                Chez Gerard Bakery, nous sommes convaincus que chaque geste
+                compte pour préserver notre planète. C &apos est pourquoi nous
+                avons mis en place une série de solutions durables pour réduire
+                notre empreinte écologique.
+              </p>
+            </div>
+            <div className="w-full md:w-[375px]">
+              <p className="bt text-kumera-900">
+                Chez Gerard Bakery, nous sommes convaincus que chaque geste
+                compte pour préserver notre planète. C &apos est pourquoi nous
+                avons mis en place une série de solutions durables pour réduire
+                notre empreinte écologique.
+              </p>
+            </div>
+          </div>
+          {/* <div className="absolute right-0 bottom-0 2xl:w-[480px] 2xl:h-[380px]">
+            <Image src={grayShape} alt="test2"></Image>
+          </div> */}
+        </div>
+        <div className="flex lg:flex-col gap-5 md:gap-24 max-md:mx-5">
+          <div className="order-2 md:order-1">
+            <div
+              className="bg-white w-full md:w-[450px] xl:w-[516px] 2xl:w-[616px] mb-5 flex flex-col md:flex-row gap-4 md:gap-[70px] xl:gap-[84px] 2xl:gap-[94px] p-5 md:p-[50px] rounded-b-[30px]
+            max-md:text-center"
+            >
+              <Image
+                src={mobile}
+                alt="mobile icon"
+                className="max-md:mx-auto"
+              ></Image>
+              <h3 className="hl4 text-laurel-800 w-full md:w-[250px]">
+                Vous commandez jusqu &apos a 48h avant le jour de livraison
+              </h3>
+            </div>
+            <div
+              className="bg-white w-full md:w-[450px] xl:w-[516px] 2xl:w-[616px] mb-5 flex flex-col md:flex-row gap-4 md:gap-[70px] xl:gap-[84px] 2xl:gap-[94px] p-5 md:p-[50px] rounded-b-[30px]
+            max-md:text-center"
+            >
+              <Image
+                src={bowl}
+                alt="mobile icon"
+                className="max-md:mx-auto"
+              ></Image>
+              <h3 className="hl4 text-laurel-800 w-full md:w-[250px]">
+                Nous produisons la quantité nécessaire pour chaque commande.
+              </h3>
+            </div>
+            <div></div>
+          </div>
+          <div className="order-1 lg:order-2">
+            <p className="text-[14px] leading-[20px] 2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 mb-5 text-rose-800 lg:text-right">
+              NOS VALEURS
+            </p>
+            <h1 className="2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 hl1 mb-8 md:mb-[70px] text-kumera-900 lg:text-right">
+              Des actions concrètes <br /> pour un avenir durable
+            </h1>
+            <p className="bt text-kumera-900 lg:text-right">
+              Chez Gerard Bakery, nous sommes convaincus que chaque geste compte
+              pour préserver notre planète. C &apos est pourquoi nous avons mis
+              en place une série de solutions durables pour réduire notre
+              empreinte écologique.
+            </p>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
