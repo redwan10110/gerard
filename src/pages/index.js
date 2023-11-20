@@ -78,7 +78,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="absolute right-0 2xl:bottom-[-150px] xl:bottom-[-120px] lg:bottom-[-20px] md:bottom-[-50px] opacity-[0.6] xl:w-[480px] xl:h-[380px] lg:w-[430px] lg:h-[340px] md:w-[330px] md:h-[260px] hidden md:block">
+          <div className="absolute right-0 2xl:bottom-[-150px] 2xl:right-[-50px] xl:bottom-[-120px] lg:bottom-[-120px] md:bottom-[-50px] opacity-[0.6] 2xl:w-[544px] 2xl:h-[434px] xl:w-[480px] xl:h-[380px] lg:w-[430px] lg:h-[340px] md:w-[330px] md:h-[260px] hidden md:block">
             <Image src={grayShape} alt="test2"></Image>
           </div>
         </div>
