@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       {/* section two */}
       <div className="bg-rose-600 relative">
-        <div className="absolute 2xl:left-[0px] 2xl:top-[-172px] xl:left-[-36px] xl:top-[-172px] lg:left-[-110px] lg:top-[-142px] max-xl:w-[250px] md:left-[-36px] md:top-[-122px] max-lg:w-[150px] left-[0px] top-[-60px] max-md:w-[95px]">
+        <div className="absolute 2xl:left-[-80px] 2xl:top-[-172px] xl:left-[-60px] xl:top-[-120px] lg:left-[-110px] lg:top-[-120px] max-2xl:w-[250px] md:left-[-50px] md:top-[-80px] max-lg:w-[150px] left-[-20px] top-[-50px] max-md:w-[95px]">
           <Image src={white} alt="pattern2"></Image>
         </div>
         <p className="text-[14px] leading-[20px] pt-[70px] 2xl:pt-[130px] 2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 mb-5 text-rose-800">
@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 w-full md:w-[450px] lg:w-[326px] max-lg:mx-auto">
+          <div className="order-1 lg:order-2 w-full md:w-[450px] lg:w-[242px] xl:w-[274px] 2xl:w-[326px] max-lg:mx-auto">
             <p className="text-[14px] leading-[20px]  mb-5 text-rose-800 lg:text-right">
               FOOD WASTE
             </p>
