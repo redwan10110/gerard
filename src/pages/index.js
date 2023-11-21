@@ -52,39 +52,45 @@ export default function Home() {
         <div className="absolute 2xl:left-[-80px] 2xl:top-[-172px] xl:left-[-60px] xl:top-[-120px] lg:left-[-110px] lg:top-[-120px] max-2xl:w-[250px] md:left-[-50px] md:top-[-80px] max-lg:w-[150px] left-[-20px] top-[-50px] max-md:w-[95px]">
           <Image src={white} alt="pattern2"></Image>
         </div>
-        <p className="text-[14px] leading-[20px] pt-[70px] 2xl:pt-[130px] 2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 mb-5 text-rose-800">
-          NOS VALEURS
-        </p>
-        <h1 className="2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 hl1 mb-5 md:mb-[70px] text-kumera-900">
-          Des actions concrètes <br /> pour un avenir durable
-        </h1>
-        <div className="relative">
-          {/* paragraph box */}
-          <div className="flex flex-col md:flex-row xl:gap-12 2xl:gap-24 gap-4 2xl:ml-[480px] xl:ml-[400px] lg:ml-[162px] md:ml-[60px] mx-5 mb-[110px] lg:mb-[120px] xl:mb-[280px] ">
-            <div className="w-full md:w-[375px]">
-              <p className="bt text-kumera-900">
-                Chez Gerard Bakery, nous sommes convaincus que chaque geste
-                compte pour préserver notre planète. C &apos est pourquoi nous
-                avons mis en place une série de solutions durables pour réduire
-                notre empreinte écologique.
-              </p>
-            </div>
-            <div className="w-full md:w-[375px]">
-              <p className="bt text-kumera-900">
-                Chez Gerard Bakery, nous sommes convaincus que chaque geste
-                compte pour préserver notre planète. C &apos est pourquoi nous
-                avons mis en place une série de solutions durables pour réduire
-                notre empreinte écologique.
-              </p>
-            </div>
+        <div>
+          <div className="2xl:w-2/4 2xl:mx-auto">
+            <p className="text-[14px] leading-[20px] pt-[70px] 2xl:pt-[130px] 2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 mb-5 text-rose-800">
+              NOS VALEURS
+            </p>
+            <h1 className=" 2xl:ml-[260px] xl:ml-[200px] lg:ml-[90px] md:ml-[60px] ml-5 hl1 mb-5 md:mb-[70px] text-kumera-900">
+              Des actions concrètes <br /> pour un avenir durable
+            </h1>
           </div>
-          <div className="absolute right-0 2xl:bottom-[-150px] 2xl:right-[-50px] xl:bottom-[-120px] lg:bottom-[-120px] md:bottom-[-50px] opacity-[0.6] 2xl:w-[544px] 2xl:h-[434px] xl:w-[480px] xl:h-[380px] lg:w-[430px] lg:h-[340px] md:w-[330px] md:h-[260px] hidden md:block">
-            <Image src={grayShape} alt="test2"></Image>
+          <div className="relative overflow-hidden">
+            {/* paragraph box */}
+            <div className="flex flex-col md:flex-row xl:gap-12 2xl:gap-24 gap-4 mb-[110px] lg:mb-[120px] xl:mb-[280px] 2xl:justify-center xl:ml-[400px] lg:ml-[162px] md:ml-[60px] mx-5">
+              <div className="w-full md:w-[375px]">
+                <p className="bt text-kumera-900">
+                  Chez Gerard Bakery, nous sommes convaincus que chaque geste
+                  compte pour préserver notre planète. C &apos est pourquoi nous
+                  avons mis en place une série de solutions durables pour
+                  réduire notre empreinte écologique.
+                </p>
+              </div>
+              <div className="w-full md:w-[375px]">
+                <p className="bt text-kumera-900">
+                  Chez Gerard Bakery, nous sommes convaincus que chaque geste
+                  compte pour préserver notre planète. C &apos est pourquoi nous
+                  avons mis en place une série de solutions durables pour
+                  réduire notre empreinte écologique.
+                </p>
+              </div>
+            </div>
+
+            {/* Pattern */}
+            <div className="absolute right-0 2xl:bottom-[50px] 2xl:right-[-50px] xl:bottom-[50px] lg:bottom-[40px] md:bottom-[20px] opacity-[0.6] 2xl:w-[544px] 2xl:h-[434px] xl:w-[480px] xl:h-[380px] lg:w-[300px] lg:h-[200px] md:w-[300px] md:h-[200px] hidden md:block">
+              <Image src={grayShape} alt="test2"></Image>
+            </div>
           </div>
         </div>
         {/* Section three */}
-        <div className="flex flex-col lg:flex-row max-md:mx-5 pb-12 md:pb-16 xl:pb-24">
-          <div className="order-2 lg:order-1 2xl:mr-48 xl:mr-36 lg:mr-10 ">
+        <div className="flex flex-col lg:flex-row lg:justify-center lg:gap-18 xl:gap-32 max-md:mx-5 pb-12 md:pb-16 xl:pb-24 ">
+          <div className="order-2 lg:order-1 ">
             <div className="flex ">
               <div className="hidden md:block">
                 <Image
@@ -173,10 +179,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* Section Three */}
-      <div className="bg-[#F1F1F1] 2xl:py-52 2xl:pl-52 xl:pt-36 xl:pl-28 xl:pb-52 lg:pt-28 xl:lg-20 lg:pb-36 md:p-28 max-md:px-4 pt-20 max-md:pb-10">
-        <div className="flex flex-col lg:justify-between lg:flex-row gap-6 md:gap-16 lg:gap-9 2xl:gap-16">
-          <div className="w-full lg:w-[250px] xl:w-[324px] max-lg:mx-auto">
+      {/* Section 4 */}
+      <div className="bg-[#F1F1F1] 2xl:py-52 xl:pt-36 xl:pb-52 lg:pt-28 lg:pb-36 md:p-28 max-md:px-4 pt-20 max-md:pb-10">
+        <div className="flex flex-col lg:flex-row gap-6 md:gap-16 2xl:gap-24 2xl:justify-center lg:justify-between">
+          <div className="w-full lg:w-[250px] xl:w-[360px] max-lg:mx-auto">
             <p className="text-[14px] leading-[20px]  mb-5 text-rose-800">
               LIVRAISON 100% ELECTRIQUE
             </p>
@@ -189,9 +195,9 @@ export default function Home() {
               transports.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row max-lg:mx-auto gap-3">
-            <div>
-              <div className="bg-rose-600 p-10 rounded-t-[500px] rounded-b-[40px]">
+          <div className="flex flex-col md:flex-row max-lg:mx-auto gap-10 ">
+            <div className="">
+              <div className="bg-rose-600 p-10 rounded-t-[500px] rounded-b-[40px] ">
                 <Image src={shop} alt="shop" layout="responsive"></Image>
               </div>
               <div className="flex items-center bg-rose-700 p-6 mt-3 rounded-[16px]">
@@ -209,8 +215,8 @@ export default function Home() {
                 </h3>
               </div>
             </div>
-            <div>
-              <div className="bg-laurel-600 p-10 rounded-t-[500px] rounded-b-[40px] ">
+            <div className="">
+              <div className="bg-laurel-600 p-10 rounded-t-[500px] rounded-b-[40px]">
                 <Image
                   src={truck}
                   alt="shop"
